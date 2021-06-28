@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Practice": {
+      "commandName": "Project",
+      "commandLineArgs": "test"
+    }
+  }
+}
