@@ -23,11 +23,13 @@ namespace Practice.GarbageCollection
         public void Dispose()
         {
             Console.WriteLine("RandomPerson with name - " + Name + " was killed.");
+            
         }
 
-        ~RandomPerson()
+        ~RandomPerson() //Destructor or Finalizer
         {
             Console.WriteLine("RandomPerson with name - " + Name + " died.");
         }
+        
     }
 }

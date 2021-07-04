@@ -15,7 +15,7 @@ namespace Practice.API_Testing
         public void execute()
         {
             string html = string.Empty;
-            string url = @"https://www.boredapi.com/api/activity";
+            string url = @"https://localhost:44301/api/my/method1";
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;

@@ -11,6 +11,7 @@ using Practice.ClassTypes;
 using Practice.API_Testing;
 using Practice.FileManagementSystem;
 using Practice.GarbageCollection;
+using Practice.Delegate;
 
 namespace Practice
 {
@@ -18,6 +19,10 @@ namespace Practice
     {
         public void test()
         {
+            //char[] abcd = { 'a', 'b' };
+            //string abcde = new string(abcd);
+
+            Console.WriteLine("Added new Line");
             using (RandomPerson person1 = new RandomPerson())
             {
 
@@ -27,13 +32,42 @@ namespace Practice
                 RandomPerson person2 = new RandomPerson();
                 person2.Name = "Shyam";
                 person2.PrintName();
+
+                int i = new int();
+                i = 10;
+                Console.WriteLine(i);
             }
         }
 
         public static void Main (string[] ars)
         {
+
+
+            IPractice hotelReception = new HotelReception();
+            hotelReception.execute();
+
+            return;
+
+            IPractice apiutilityobj1 = new APIUtility();
+            apiutilityobj1.execute();
+
+            return;
+
+            IPractice apiReader1 = new APIReader();
+            apiReader1.execute();
+
+            return;
+
             PracticeCode p = new PracticeCode();
             p.test();
+
+            GC.Collect();
+
+            RandomPerson random1 = new RandomPerson();
+            random1.Name = "Munna";
+            random1.PrintName();
+            random1.Dispose();
+
             return;
 
             SingletonClass singletonClass1 = SingletonClass.oldGetInstance();
@@ -60,7 +94,7 @@ namespace Practice
             StudentConstructor varr2 = StudentConstructor.GetInstance();
             varr2.printName();
 
-           
+
 
             //sctor.printName();
             //sctorpar.printName();
