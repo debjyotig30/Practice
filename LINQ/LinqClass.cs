@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practice.Delegate
+namespace Practice.LINQ
 {
-    public delegate void Action();
+    class LinqClass
+    {
+
+    }
 }

@@ -12,7 +12,7 @@ namespace Practice.ClassTypes
 
     //Object creation is possible so cannot be static or abstract.
     //Only one object allowed so needs a counter.
-    //Its public static so anyone can access.
+    //Its public so anyone can access.
     public class SingletonClass
     {
         private static int counter = 0;

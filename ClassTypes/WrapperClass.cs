@@ -32,10 +32,13 @@ namespace Practice.ClassTypes
             ComplicatedClass complicatedClass = new ComplicatedClass();
             SimplifiedClass wcSecCalc = new SimplifiedClass(complicatedClass);
             wcSecCalc.secondCalc(hours);
+
+           
         }
     }
     class ComplicatedClass
     {
+        public int Age { get; set; }
         public int MinuteCalc(int hours)
         {
             int minutes = 60 * hours;

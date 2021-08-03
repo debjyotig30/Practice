@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice.Delegate
 {
+    //public delegate void Action();
     public class HotelGuest
     {
         public string Name { get; }

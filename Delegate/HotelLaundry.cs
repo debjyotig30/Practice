@@ -8,7 +8,7 @@ namespace Practice.Delegate
 {
     public class HotelLaundry
     {
-        public static void CleanClothes()
+        public static void CleanClothes(char cg)
         {
             Console.WriteLine("We have cleaned your clothes.");
         }

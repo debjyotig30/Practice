@@ -20,7 +20,7 @@ namespace Practice.ClassTypes
          */
         int var1;
 
-        //private TypesofConstructor() //Private constructor
+       // private TypesofConstructor(); //Private constructor
         public TypesofConstructor() //Default constructor 
         {
             // Default or implicit constructor initializes all data members of the class with their default values.

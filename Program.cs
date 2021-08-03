@@ -12,6 +12,10 @@ using Practice.API_Testing;
 using Practice.FileManagementSystem;
 using Practice.GarbageCollection;
 using Practice.Delegate;
+using System.Collections.Generic;
+using System.Collections;
+using Practice.Generics;
+using Practice.Operator_overloading;
 
 namespace Practice
 {
@@ -43,9 +47,57 @@ namespace Practice
         {
 
 
-            IPractice hotelReception = new HotelReception();
-            hotelReception.execute();
+            IPractice calculator = new Calculator();
+            calculator.execute();
+            return;
 
+            Console.WriteLine("One thread for Main");
+            IPractice myThread = new MyThread();
+            myThread.execute();
+
+            return;
+
+            IPractice genericsTester = new GenericsTester<int>();
+            genericsTester.execute();
+
+            return;
+            //IPractice pn = new PrimeNumber();
+            //pn.execute();
+
+            //return;
+
+
+            //IPractice predicatetest = new PredicateTest();
+            //predicatetest.execute();
+
+            //return;
+            //int i,j;
+            //i = 20;
+
+            //double d1 = 100.23;
+            //double d2 = 100.84;
+            //i = (int)d1;
+            //j = (int)d2;
+            //Console.WriteLine(i);
+            //Console.WriteLine(j);
+
+            //int[] arr = new int[3];
+
+            //ArrayList mylist = new ArrayList();
+            //mylist.Add(1);
+            //mylist.Add(true);
+            //mylist.Add(1.23);
+            //mylist.Add('A');
+            //mylist.Add("Ball");
+
+            //List<int> genericList = new List<int>();
+
+            //return;
+
+            var hotelReception = new HotelReception();
+            hotelReception.execute();
+            //int j = 9;
+            
             return;
 
             IPractice apiutilityobj1 = new APIUtility();
