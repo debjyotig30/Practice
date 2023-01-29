@@ -27,6 +27,8 @@ namespace Practice.Pattern_Problems
             pattern6(n);
             Console.WriteLine("\nPattern 7:");
             pattern7(n);
+
+            
         }
 
         public void pattern1(int n)

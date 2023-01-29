@@ -19,7 +19,10 @@ namespace Practice.Arrays
             Console.Write("Enter the length of the series: ");
             int seriesLength = Int32.Parse(Console.ReadLine());
 
-            fibonacci(seriesLength);
+            FibonacciSeries(seriesLength);
+
+
+            //fibonacci(seriesLength);
 
             static void fibonacci(int seriesLength)
             {
@@ -43,6 +46,18 @@ namespace Practice.Arrays
 
                 //Console.WriteLine("The Fibonacci Series is:" + fibonacciSeries.ToString());
             }
+        }
+        public void FibonacciSeries(int length)
+        {
+            int[] fibArr = new int[length];
+            fibArr[0] = 0;
+            fibArr[1] = 1;
+            for(int i=2; i<length; i++)
+            {
+                fibArr[i] = fibArr[i - 1] + fibArr[i - 2];
+            }
+
+            Utilities.PrintArray(fibArr);
         }
     }
 }

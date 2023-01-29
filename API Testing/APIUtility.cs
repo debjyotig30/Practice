@@ -27,7 +27,7 @@ namespace Practice.API_Testing
         }
         public void execute()
         {
-            string url = @"https://www.boredapi.com/api/activity";
+            string url = @"https://reqres.in/api/users/1";
             APIUtility apiUtility = new APIUtility();
             apiUtility.ApiUtilityMethod(url);
         }

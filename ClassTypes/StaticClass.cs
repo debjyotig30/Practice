@@ -31,7 +31,7 @@ namespace Practice.ClassTypes
 
         //StaticClass sc = new StaticClass(); //Static classes cannot be instantiated.
 
-        //StaticClass()
+        // StaticClass()
         //{
                 //Static classes cannot have constructors.
         //}

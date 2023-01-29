@@ -110,6 +110,11 @@ namespace Practice.ParameterTypes
             Student stud = new Student();
             stud.Name = "Ram";
             stud.Marks = 88;
+
+
+            
+
+
             Console.WriteLine("student.Marks = " + stud.Marks);//88
             NormalTestObj(stud);
             Console.WriteLine("student.Marks = " + stud.Marks);//89

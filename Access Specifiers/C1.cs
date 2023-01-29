@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practice
+namespace Practice.Access_Specifiers
 {
-    interface IPractice
+    public class C1 //: C2
     {
-       
-        public void execute();
-        public string print()
+        public int c23;
+        public virtual void ghj()
         {
-            return "String";
+
         }
     }
 }
